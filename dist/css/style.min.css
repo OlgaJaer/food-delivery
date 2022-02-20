@@ -67,15 +67,31 @@ ul {
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 0;
   left: 0;
   overflow: hidden;
+}
+.parallax_top {
+  top: 0;
+}
+.parallax_top .parallax__layer {
+  top: 0;
+}
+.parallax_top .parallax__item {
+  top: 0;
+}
+.parallax_bottom {
+  bottom: 0;
+}
+.parallax_bottom .parallax__layer {
+  bottom: 0;
+}
+.parallax_bottom .parallax__item {
+  bottom: 0;
 }
 .parallax__layer {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
   left: 0;
   will-change: transform animation;
 }
@@ -101,6 +117,9 @@ ul {
   width: 50%;
   top: 45%;
   left: 30%;
+}
+.parallax__item .vegitable-contacts {
+  top: 20%;
 }
 
 .header {
@@ -177,6 +196,22 @@ ul {
   background-image: url(../img/bg/meat.svg), url(../img/bg/broccoli.svg), url(../img/bg/hand.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top 30px left, bottom -30px left, top 250px right;
+}
+.popular__cart {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popular__sum {
+  background: #3f3f3f;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  border-radius: 5px;
+  margin-right: 20px;
 }
 .popular__title {
   text-align: center;
@@ -317,16 +352,34 @@ ul {
   border: 2px solid #eceef6;
   border-radius: 50%;
   box-shadow: 0px 4px 8px 0px #cda92942;
-  background-image: url(../img/icons/more-icon.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #fe8656;
   margin: 0 auto;
   cursor: pointer;
   transition: 0.3s ease-in;
 }
-.popular__btn:hover {
+.popular__btn_orange {
+  background-image: url(../img/icons/more-icon.png);
+  background-color: #fe8656;
+}
+.popular__btn_orange:hover {
   background-color: #f23f0e;
+}
+.popular__btn_white {
+  position: relative;
+  background-image: url(../img/images/bag.svg);
+}
+.popular__btn_white:after {
+  content: "2";
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fe8656;
+  color: #fff;
+  text-align: center;
 }
 
 .gallery {
@@ -438,6 +491,48 @@ ul {
   background-repeat: no-repeat;
   width: 32px;
   height: 9px;
+}
+
+.parallax {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.parallax_bottom {
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  will-change: transform animation;
+}
+.parallax__item {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.parallax__item_bg {
+  width: 100%;
+  bottom: 10%;
+  background-color: #f0f5fb;
+}
+.parallax__item_icons {
+  width: 100%;
+  top: 50px;
+}
+.parallax__item_vegetables {
+  top: 20%;
+}
+.parallax__item_pizza {
+  width: 50%;
+  top: 45%;
+  left: 30%;
 }
 
 .footer {

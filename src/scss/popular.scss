@@ -22,6 +22,22 @@
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: top 30px left, bottom -30px left, top 250px right;
   }
+  &__cart {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__sum {
+    background: rgb(63, 63, 63);
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
   &__title {
     text-align: center;
     font-size: 48px;
@@ -162,16 +178,34 @@
     border: 2px solid #eceef6;
     border-radius: 50%;
     box-shadow: 0px 4px 8px 0px #cda92942;
-    background-image: url(../img/icons/more-icon.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: $bg-dark;
     // background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
     margin: 0 auto;
     cursor: pointer;
     transition: 0.3s ease-in;
-    &:hover {
-      background-color: #f23f0e;
+    &_orange {
+      background-image: url(../img/icons/more-icon.png);
+      background-color: $bg-dark;
+      &:hover {
+        background-color: #f23f0e;
+      }
+    }
+    &_white {
+      position: relative;
+      background-image: url(../img/images/bag.svg);
+      &:after {
+        content: "2";
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: $bg-dark;
+        color: #fff;
+        text-align: center;
+      }
     }
   }
 }

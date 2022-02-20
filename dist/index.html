@@ -11,6 +11,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
+
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/index.js"></script>
   <title>Pizza Shop</title>
@@ -19,7 +20,7 @@
 <body>
   <section class="hero">
     <!-- <div class="wrapper"> -->
-    <div class="parallax">
+    <div class="parallax parallax_top">
       <div class="parallax__layer parallax__layer__0" data-speed="2">
         <div class="parallax__item parallax__item_bg">
         </div>
@@ -61,7 +62,7 @@
           enjoyable and delicious
         </p>
         <div class="hero__img" data-speed="16">
-          <img src="./img/parallax/pizza-hero.png" alt="">
+          <img src="./img/parallax/pizza-m.png" alt="">
         </div>
       </div>
 
@@ -71,6 +72,13 @@
   <!-- Popular dishes -->
   <section class="popular">
     <div class="popular__bg">
+    </div>
+
+    <div class="popular__cart">
+      <div class="popular__sum">= 298 &#8372;</div>
+      <div class="popular__btn popular__btn_white">
+        <i class="fa-thin fa-bag-shopping"></i>
+      </div>
     </div>
     <div class="container container_popular">
       <h2 class="popular__title">Popular dishes</h2>
@@ -206,7 +214,7 @@
           </div>
         </div>
       </div>
-      <div class="popular__btn">
+      <div class="popular__btn popular__btn_orange">
         <button></button>
       </div>
     </div>
@@ -233,6 +241,13 @@
   </section>
   <section class="contacts">
     <div class="contacts__bg"></div>
+    <div class="parallax parallax_bottom">
+
+      <div class="parallax__layer parallax__layer__2" data-speed="10">
+        <img src="./img/parallax/vegitable-contacts.png" alt=""
+          class="parallax__item parallax__item_vegetables foreground ">
+      </div>
+    </div>
     <div class="container container_contacts">
       <div class="contacts__content">
         <h1 class="contacts__title">Fill out the form <br>
