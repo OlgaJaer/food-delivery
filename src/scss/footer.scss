@@ -1,0 +1,22 @@
+.footer {
+  max-width: 1160px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin-bottom: 34px;
+  margin: 0 auto;
+  .copyright {
+    &__text_right {
+      span {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+  }
+  .logo {
+    margin-bottom: 17px;
+  }
+}

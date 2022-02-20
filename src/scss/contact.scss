@@ -1,0 +1,76 @@
+.contacts {
+  background-color: $bg;
+  position: relative;
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/bg/lemon.svg), url(../img/bg/paprika.svg), url(../img/bg/shashlik.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom 35px left, top 50% right 40px, bottom 35px right 60px;
+  }
+  &__content {
+    padding-top: 82px;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 42px;
+  }
+  &__form {
+    &-block {
+      display: flex;
+    }
+  }
+  &__inputs {
+    input {
+      min-width: 260px;
+      padding: 21px 0 19px 31px;
+      color: #222;
+      border: 2px solid rgba(236, 238, 246, 1);
+      border-radius: 57px;
+      &:first-child {
+        margin-right: 40px;
+      }
+      &:last-child {
+        margin-right: 37px;
+      }
+    }
+  }
+  &__button {
+    input {
+      position: relative;
+      min-width: 260px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      text-align: center;
+      padding: 17px 53px 18px 58px;
+      background: linear-gradient(180deg, #fe5626 0%, #f23f0e 100%), linear-gradient(0deg, #59aaf1, #59aaf1);
+      box-shadow: 0px 4px 8px 0px rgba(205, 169, 41, 0.26);
+      border-color: transparent;
+      border-radius: 59px;
+      cursor: pointer;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        bottom: auto;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        background-image: url("../img/icons/arrow.png");
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 9px;
+      }
+    }
+  }
+}

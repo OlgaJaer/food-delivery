@@ -1,0 +1,69 @@
+$font-family: "Montserrat", sans-serif;
+$primary-color: #252b42;
+$secondary-color: #374754;
+$bg: #f0f5fb;
+$bg-dark: rgba(254, 134, 86, 1);
+$blue: #59aaf1;
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  font-family: $font-family;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  &_hero {
+    max-width: 1160px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  &_popular {
+    max-width: 1160px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 103px;
+  }
+  &_gallery {
+    max-width: 1440px;
+    height: 260px;
+  }
+  &_contacts {
+    max-width: 1160px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}

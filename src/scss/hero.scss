@@ -1,0 +1,131 @@
+.parallax {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  &__layer {
+    position: absolute;
+    // width: 120%;
+    // height: 120%;
+    // top: -10%;
+    // left: -10%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    will-change: transform animation;
+  }
+  &__item {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &_bg {
+      width: 100%;
+      // background-image: url(../img/images//bg-icons.png);
+      // background-position: top 50px;
+      // background-repeat: no-repeat;
+      // top: 300px;
+      // bottom: 120px;
+      bottom: 10%;
+      background-color: $bg;
+    }
+    &_icons {
+      width: 100%;
+      top: 50px;
+      // left: 30px;
+      // background-image: url(../img/images/bg-icons.png);
+      // background-position: top 50px;
+      // background-repeat: no-repeat;
+      // bottom: 120px;
+    }
+    &_vegetables {
+      // top: 136px;
+      top: 20%;
+    }
+    &_pizza {
+      width: 50%;
+      // top: 350px;
+      top: 45%;
+      // left: 397px;
+      left: 30%;
+    }
+  }
+}
+// $parallax--layers: 4;
+
+// @for $i from 0 through $parallax__layers {
+//   // $x: ($parallax--layers - $i) / 2;
+//   $x: calc(($parallax--layers - $i) / 2);
+//   .parallax__layer__#{$i} {
+//     transform: translateZ(-100 * $x#{px}) scale($x + 1);
+//   }
+// }
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 105px;
+  .menu {
+    &__link {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+    }
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    &-schedule {
+      margin-right: 40px;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #46cb72;
+        margin-right: 9px;
+        margin-bottom: 3px;
+      }
+    }
+    &-phone {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: right;
+      &__img {
+        width: 33px;
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.hero {
+  &__content {
+    position: relative;
+    max-width: 621px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    text-align: center;
+  }
+  &__text {
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+  }
+}

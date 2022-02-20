@@ -1,0 +1,177 @@
+.popular {
+  background-color: #fff;
+  position: relative;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 300px;
+  //   transform: translate(0px, -100%);
+  //   background: linear-gradient(180deg, $bg);
+  // }
+  // z-index: 2;
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/bg/meat.svg), url(../img/bg/broccoli.svg), url(../img/bg/hand.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top 30px left, bottom -30px left, top 250px right;
+  }
+  &__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 49px;
+  }
+  .tabs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .tablinks {
+      padding: 16px 40px;
+      border-radius: 45px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      text-align: center;
+      background: linear-gradient(0deg, #eceef6, #eceef6);
+      transition: 0.3s ease-in;
+      &:not(:last-child) {
+        margin-right: 41px;
+      }
+
+      &.active {
+        background: linear-gradient(0deg, #59aaf1, #59aaf1);
+        color: #fff;
+      }
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 425px;
+    grid-column-gap: 40px;
+    grid-row-gap: 25px;
+    margin-bottom: 55px;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 450px;
+    }
+    @media (max-width: 967px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 391px;
+    }
+  }
+  &__item {
+    position: relative;
+    // border: 2px solid red;
+    border: 2px solid #eceef6;
+    border-radius: 15px;
+    padding: 35px 15px 30px 25px;
+  }
+  &__hit {
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    background: $bg-dark;
+    box-shadow: 0px 4px 8px 0px rgba(205, 71, 41, 0.26);
+    border-radius: 3px;
+    padding: 4px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    z-index: 5;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  &__name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  &__size {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0em;
+  }
+  &__ingredients {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+    margin-bottom: 19px;
+  }
+  &__price {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+    color: #121146;
+  }
+  &__item-btn {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    bottom: -20px;
+    left: calc(50% - 18px);
+    transform: rotate(45deg);
+    border-bottom-right-radius: 18px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    // border-color: red;
+    border-color: #eceef6;
+    border-width: 2px;
+    // border: 2px solid #eceef6;
+    // border-radius: 15px;
+    background: #fff;
+    z-index: 5;
+    button {
+      width: 29px;
+      height: 29px;
+      border: 2px solid #eceef6;
+      border-radius: 50%;
+      background-image: url(../img/images/bag.svg);
+      background-repeat: no-repeat;
+      background-position: left 45% top 40%;
+      transform: rotate(-45deg);
+      background-color: #fff;
+      transition: 0.3s ease-in;
+      &:hover {
+        border: 2px solid $bg-dark;
+        background-image: url(../img/images/bag-hover.svg);
+        background-color: $bg-dark;
+        box-shadow: 0px 4px 8px 0px rgba(205, 71, 41, 0.26);
+      }
+    }
+  }
+  &__btn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #eceef6;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px 0px #cda92942;
+    background-image: url(../img/icons/more-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $bg-dark;
+    // background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    &:hover {
+      background-color: #f23f0e;
+    }
+  }
+}

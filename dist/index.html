@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+  <title>Pizza Shop</title>
+</head>
+
+<body>
+  <section class="hero">
+    <!-- <div class="wrapper"> -->
+    <div class="parallax">
+      <div class="parallax__layer parallax__layer__0" data-speed="2">
+        <div class="parallax__item parallax__item_bg">
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer__1" data-speed="5">
+        <img src="./img/images/bg-icons.png" class="parallax__item parallax__item_icons background" alt="">
+      </div>
+      <div class="parallax__layer parallax__layer__2" data-speed="10">
+        <img src="./img/parallax/vegitable-hero.png" alt=""
+          class="parallax__item parallax__item_vegetables foreground ">
+      </div>
+
+      <!-- <div class="parallax__layer parallax__layer__3" data-speed="16">
+        <img src="./img/parallax/pizza-hero.png" alt="" class="parallax__item parallax__item_pizza">
+      </div> -->
+    </div>
+    <div class="container container_hero">
+      <header class="header">
+        <nav class="menu">
+          <a class="menu__link" href="#home">Payment</a>
+          <a class="menu__link" href="#product">About us</a>
+          <a class="menu__link" href="#contact">Contacts</a>
+        </nav>
+        <div class="logo">
+          <img src="./img/images/logo.png" class="logo__img" alt="logo">
+        </div>
+        <div class="info">
+          <div class="info-schedule">Daily 11am - 9pm</div>
+          <div class="info-phone">
+            <img class="info-phone__img" src="./img/images/phone.svg" alt="phone-icon">
+            <a href="tel:+0800330898" class="info-phone__link">0 800 33 08 98</a>
+          </div>
+        </div>
+      </header>
+      <div class="hero__content">
+        <h1 class="hero__title">Food delivery in Kovel</h1>
+        <p class="hero__text">
+          If you decide to relax or have unexpected guests, call us. We make sure that your vacation is comfortable,
+          enjoyable and delicious
+        </p>
+        <div class="hero__img" data-speed="16">
+          <img src="./img/parallax/pizza-hero.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <!-- </div> -->
+  </section>
+  <!-- Popular dishes -->
+  <section class="popular">
+    <div class="popular__bg">
+    </div>
+    <div class="container container_popular">
+      <h2 class="popular__title">Popular dishes</h2>
+      <div class="tabs">
+        <button class="tablinks active" data-dish="Pizza">
+          <p data-title="Pizza">Pizza</p>
+        </button>
+        <button class="tablinks" data-dish="Sushi">
+          <p data-title="Sushi">Sushi</p>
+        </button>
+        <button class="tablinks" data-dish="Salad">
+          <p data-title="Salad">Salad</p>
+        </button>
+        <button class="tablinks" data-dish="Dessert">
+          <p data-title="Dessert">Dessert</p>
+        </button>
+        <button class="tablinks" data-dish="Drinks">
+          <p data-title="Drinks">Drinks</p>
+        </button>
+      </div>
+      <div class="popular__list">
+        <div class="popular__item">
+          <div class="popular__img"><img src="img/images/formaffio.jpg" alt="pizza"></div>
+          <div class="popular__info">
+            <div class="popular__name">Quattro formaggi</div>
+            <div class="popular__size">32cm</div>
+          </div>
+          <p class="popular__ingredients">
+            Dough, Mozzarella, Cheddar, Blue, Parmesan
+          </p>
+          <div class="popular__price">119 UAH</div>
+          <div class="popular__item-btn">
+            <button type="submit"></button>
+          </div>
+        </div>
+        <div class="popular__item">
+          <div class="popular__img"><img src="img/images/carbonara.jpg" alt=""></div>
+          <div class="popular__info">
+            <div class="popular__name">Карбонара</div>
+            <div class="popular__size">32cm</div>
+          </div>
+          <div class="popular__ingredients">
+            Dough, Mozzarella, Cheddar, Blue, Parmesan
+          </div>
+          <div class="popular__price">119 UAH</div>
+          <div class="popular__item-btn">
+            <button type="submit"></button>
+          </div>
+        </div>
+        <div class="popular__item">
+          <div class="popular__hit">Хіт</div>
+          <div class="popular__img"><img src="img/images/filadelfia.jpg" alt="pizza"></div>
+          <div class="popular__info">
+            <div class="popular__name">Філадельфія селмон</div>
+            <div class="popular__size">32cm</div>
+          </div>
+          <div class="popular__ingredients">
+            Dough, Mozzarella, Cheddar, Blue, Parmesan
+          </div>
+          <div class="popular__price">119 UAH</div>
+          <div class="popular__item-btn">
+            <button class="btn"></button>
+          </div>
+        </div>
+        <div class="popular__item">
+          <div class="popular__img"><img src="img/images/di-mare.jpg" alt=""></div>
+          <div class="popular__info">
+            <div class="popular__name">Ді маре</div>
+            <div class="popular__size">32cm</div>
+          </div>
+          <div class="popular__ingredients">
+            Dough, Mozzarella, Cheddar, Blue, Parmesan
+          </div>
+          <div class="popular__price">119 UAH</div>
+          <div class="popular__item-btn">
+            <button type="submit"></button>
+          </div>
+        </div>
+        <div class="popular__item">
+          <div class="popular__img"><img src="img/images/pizza-1.jpg" alt=""></div>
+          <div class="popular__info">
+            <div class="popular__name">Кватро формаджіо</div>
+            <div class="popular__size">32cm</div>
+          </div>
+          <div class="popular__ingredients">
+            Dough, Mozzarella, Cheddar, Blue, Parmesan
+          </div>
+          <div class="popular__price">119 UAH</div>
+          <div class="popular__item-btn">
+            <button type="submit"></button>
+          </div>
+        </div>
+        <div class="popular__item">
+          <div class="popular__img"><img src="img/images/pizza-2.jpg" alt=""></div>
+          <div class="popular__info">
+            <div class="popular__name">Кватро формаджіо</div>
+            <div class="popular__size">32cm</div>
+          </div>
+          <div class="popular__ingredients">
+            Dough, Mozzarella, Cheddar, Blue, Parmesan
+          </div>
+          <div class="popular__price">119 UAH</div>
+          <div class="popular__item-btn">
+            <button type="submit"></button>
+          </div>
+        </div>
+        <div class="popular__item">
+          <div class="popular__img"><img src="img/images/formaffio.jpg" alt=""></div>
+          <div class="popular__info">
+            <div class="popular__name">Кватро формаджіо</div>
+            <div class="popular__size">32cm</div>
+          </div>
+          <div class="popular__ingredients">
+            Dough, Mozzarella, Cheddar, Blue, Parmesan
+          </div>
+          <div class="popular__price">119 UAH</div>
+          <div class="popular__item-btn">
+            <button type="submit"></button>
+          </div>
+        </div>
+        <div class="popular__item">
+          <div class="popular__img"><img src="img/images/image_cut.png" alt=""></div>
+          <div class="popular__info">
+            <div class="popular__name">Кватро формаджіо</div>
+            <div class="popular__size">32cm</div>
+          </div>
+          <div class="popular__ingredients">
+            Dough, Mozzarella, Cheddar, Blue, Parmesan
+          </div>
+          <div class="popular__price">119 UAH</div>
+          <div class="popular__item-btn">
+            <button type="submit"></button>
+          </div>
+        </div>
+      </div>
+      <div class="popular__btn">
+        <button></button>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="container container_gallery">
+      <div class="gallery__content swiper">
+        <div class="gallery__images swiper-wrapper">
+          <img class="swiper-slide" src="./img//images/foto-2.jpg" alt="our kitchen">
+          <img class="swiper-slide" src="./img//images/foto-1.jpg" alt="our kitchen">
+          <img class="swiper-slide" src="./img//images/foto-3.jpg" alt="our kitchen">
+          <img class="swiper-slide" src="./img//images/foto-4.jpg" alt="our kitchen">
+          <img class="swiper-slide" src="./img//images/foto-2.jpg" alt="our kitchen">
+          <img class="swiper-slide" src="./img//images/foto-1.jpg" alt="our kitchen">
+        </div>
+        <!-- <div class="gallery__link">
+          <div class="gallery__link-instagram">Instagram: <span>@classic_kovel</span></div>
+        </div> -->
+      </div>
+      <div class="gallery__link">
+        <div class="gallery__link-instagram">Instagram: <span>&nbsp;@classic_kovel</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="contacts__bg"></div>
+    <div class="container container_contacts">
+      <div class="contacts__content">
+        <h1 class="contacts__title">Fill out the form <br>
+          and we will call you</h1>
+        <form class="contacts__form" action="" method="">
+          <div class="contacts__form-block">
+            <div class="contacts__inputs">
+              <input type="text" class="name" name="name" placeholder="Your name" id="">
+              <input type="tel" class="phone" name="phone" placeholder="Phone number" id="">
+            </div>
+            <div class="contacts__button">
+              <input type="submit" class="order" value="Сall back">
+            </div>
+          </div>
+        </form>
+        <div class="contacts__img" data-speed="16">
+          <img src="./img/images/car.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+
+    <div class="copyright">
+      <div class="copyright__text copyright__text_left">© Classic Family Restaurant
+      </div>
+    </div>
+    <div class="logo">
+      <img src="./img/images/logo.png" class="logo__img" alt="logo">
+    </div>
+    <div class="copyright">
+      <div class="copyright__text copyright__text_right">Made with delight by <span>&nbsp;harmuder</span>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
