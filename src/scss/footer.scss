@@ -1,12 +1,11 @@
 .footer {
-  max-width: 1160px;
   background-color: #fff;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // margin-bottom: 34px;
-  margin: 0 auto;
+  @include screen(md) {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+  }
+
   .copyright {
     &__text_right {
       span {

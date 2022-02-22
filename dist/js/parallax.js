@@ -35,7 +35,7 @@ const parallax = document.querySelector('parallax')
 //   observer.observe(document.querySelector('.popular'))
 //   function setParallaxItemsStyle(scrollTopProcent) {
 //     bg.style.cssText = `transform:translate(0%, -$(scrollTopProcent / 9)%)`
-//     icons.parentElemrnt.style.cssText = `transform:translate(0%, -$(scrollTopProcent / 6)%)`
-//     vegetables.parentElemrnt.style.cssText = `transform:translate(0%, -$(scrollTopProcent / 3)%)`
+//     icons.parentElement.style.cssText = `transform:translate(0%, -$(scrollTopProcent / 6)%)`
+//     vegetables.parentElement.style.cssText = `transform:translate(0%, -$(scrollTopProcent / 3)%)`
 //   }
 // }

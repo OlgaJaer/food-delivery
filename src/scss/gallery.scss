@@ -2,9 +2,8 @@
   background-color: #fff;
   position: relative;
   padding-bottom: 127px;
-  // &__content {
-  //   padding-bottom: 127px;
-  // }
+  z-index: 3;
+
   &__link {
     position: absolute;
     top: 34%;
@@ -13,25 +12,26 @@
     width: 480px;
     height: 180px;
     background: linear-gradient(45.04deg, #fd9924 -51.05%, #f65b16 134.89%);
-    // filter: box-shadow(0px 20px 25px #fd372433);
-    // filter: box-shadow(0px 35px 50px #fd372433);
     box-shadow: 0px 70px 90px 0px #fd372433, 0px 35px 50px 0px #fd372433, 0px 20px 25px 0px #fd372433;
-    // box-shadow: 0px 35px 50px 0px #fd372433;
-    // box-shadow:0px 35px 50px 0px #fd372433;
     border-radius: 15px;
     padding: 20px;
     z-index: 100;
+    @include screen(sm) {
+      width: 360px;
+    }
     &-instagram {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 440px;
-      height: 140px;
+      height: 100%;
       color: #fff;
       font-size: 24px;
       line-height: 29px;
       border: 2px solid rgba(255, 255, 255, 0.1);
       border-radius: inherit;
+      @include screen(sm) {
+        flex-direction: column;
+      }
       span {
         align-items: center;
         font-weight: 700;
@@ -42,6 +42,4 @@
 .swiper {
   width: 100%;
   height: 100%;
-  // margin-left: auto;
-  // margin-right: auto;
 }

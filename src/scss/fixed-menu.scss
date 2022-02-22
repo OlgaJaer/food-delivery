@@ -1,0 +1,51 @@
+.fixed-menu {
+  &__list {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 80px;
+    left: -100%;
+    width: 130px;
+    height: 200px;
+    border-radius: 10px 0 0 10px;
+    margin: 10px 0;
+    padding: 20px 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 40%);
+    transition-duration: 0.8s;
+    z-index: 3;
+  }
+  &__link {
+    display: block;
+    padding: 12px 40px;
+    font-size: 16px;
+    transition-duration: 0.8s;
+  }
+  &__link {
+    text-decoration: none;
+    color: $blue;
+    transition: all 0.5s;
+    &:hover {
+      color: $bg-dark;
+    }
+  }
+}
+
+.menu__icon {
+  margin-left: 60px;
+}
+.menu__icon::before {
+  content: "";
+  padding: 30px 22px 30px 30px;
+  cursor: pointer;
+}
+// .menu__icon::after {
+//   content: "";
+//   padding: 30px 30px 30px 30px;
+//   cursor: pointer;
+// }
+.menu__icon:hover > .fixed-menu__list {
+  visibility: visible;
+  left: 0;
+}

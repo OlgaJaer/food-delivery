@@ -1,6 +1,26 @@
 'use strict'
 
 window.onload = function () {
+  const intViewportHeight = window.innerHeight
+  const headerHeight = document.querySelector('.hero').offsetHeight
+  const parallaxTop = document.querySelectorAll('.parallax__layer_top')
+  const parallaxBottom = document.querySelectorAll('.parallax__layer_bottom')
+
+  window.onscroll = function () {
+    var scroll = window.pageYOffset
+    var page = window.pageYOffset
+    console.log('page', window.pageYOffset)
+    console.log('header', headerHeight)
+
+    if (page >= headerHeight) {
+      ;[...parallaxTop].forEach((el) => (el.style.width = 0))
+      ;[...parallaxBottom].forEach((el) => (el.style.width = '100%'))
+    } else {
+      ;[...parallaxTop].forEach((el) => (el.style.width = '100%'))
+      ;[...parallaxBottom].forEach((el) => (el.style.width = 0))
+    }
+  }
+
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     // slidesPerView: 5,

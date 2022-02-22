@@ -1,8 +1,9 @@
-// @import "mixins.scss";
+@import "_mixins.scss";
 
 @import "main.scss";
 
 @import "hero.scss";
+@import "fixed-menu.scss";
 @import "popular.scss";
 @import "gallery.scss";
 @import "contact.scss";
