@@ -21,6 +21,39 @@ window.onload = function () {
     }
   }
 
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      let blockID = anchor.getAttribute('href').substring(1)
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    })
+  }
+
+  const openButton = document.querySelector('.icon')
+  const fixedMenu = document.querySelector('.fixed-menu__list')
+  const fixedMenuBg = document.querySelector('.fixed-menu')
+
+  openButton.addEventListener('click', function (e) {
+    e.preventDefault()
+    if (fixedMenu.classList.contains('active')) {
+      fixedMenu.classList.remove('active')
+    } else {
+      fixedMenu.classList.add('active')
+    }
+  })
+
+  document.addEventListener('click', (e) => {
+    if (e.target === fixedMenu) {
+      fixedMenu.classList.remove('active')
+    }
+  })
+
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     // slidesPerView: 5,
@@ -57,13 +90,6 @@ window.onload = function () {
       delay: 2700,
       disableOnInteraction: false,
     },
-    // speed: 400,
-    // spaceBetween: 40,
     loop: true,
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   })
 }

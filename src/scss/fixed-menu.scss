@@ -7,13 +7,14 @@
     left: -100%;
     width: 130px;
     height: 200px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 0 10px 10px 0;
     margin: 10px 0;
     padding: 20px 0;
     list-style: none;
     background-color: #fff;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 40%);
     transition-duration: 0.8s;
+    cursor: pointer;
     z-index: 3;
   }
   &__link {
@@ -45,7 +46,12 @@
 //   padding: 30px 30px 30px 30px;
 //   cursor: pointer;
 // }
-.menu__icon:hover > .fixed-menu__list {
+// .menu__icon:hover > .fixed-menu__list {
+//   visibility: visible;
+//   left: 0;
+// }
+
+.active {
   visibility: visible;
   left: 0;
 }

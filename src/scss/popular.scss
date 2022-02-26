@@ -68,6 +68,9 @@
       transition: 0.3s ease-in;
       &:not(:last-child) {
         margin-right: 41px;
+        @include screen(xs) {
+          margin-right: 5px;
+        }
       }
       @include screen(lg) {
         margin-bottom: 15px;
@@ -90,6 +93,8 @@
     grid-column-gap: 40px;
     grid-row-gap: 25px;
     margin-bottom: 55px;
+    background-color: #fff;
+    z-index: 2;
     @include screen(xl) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -104,8 +109,13 @@
     position: relative;
     border: 2px solid #eceef6;
     border-radius: 15px;
-    padding: 35px 15px 30px 25px;
+    // padding: 35px 15px 30px 25px;
   }
+  &__img {
+    padding-top: 26px;
+    padding-left: 45px;
+  }
+
   &__hit {
     position: absolute;
     top: 20px;
@@ -117,13 +127,15 @@
     font-size: 12px;
     font-weight: 600;
     line-height: 17px;
+    color: #fff;
     z-index: 5;
   }
   &__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
+    padding: 0 15px 8px 25px;
+    // margin-bottom: 8px;
   }
   &__name {
     font-size: 16px;
@@ -140,6 +152,7 @@
     line-height: 17px;
     text-align: left;
     padding-bottom: 19px;
+    padding: 0 15px 19px 25px;
   }
   &__price {
     font-size: 24px;
@@ -147,6 +160,7 @@
     line-height: 34px;
     color: #121146;
     padding-bottom: 18px;
+    padding-bottom: 30px;
   }
   &__item-btn {
     position: absolute;
@@ -215,7 +229,9 @@
         border-radius: 50%;
         background: $bg-dark;
         color: #fff;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
