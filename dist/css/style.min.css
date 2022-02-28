@@ -679,6 +679,7 @@ ul {
 @media screen and (max-width: 992px) {
   .contacts__form-block {
     flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 992px) {
@@ -710,10 +711,11 @@ ul {
     margin-right: 0;
   }
 }
-.contacts__button input {
-  position: relative;
+.contacts__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-width: 260px;
-  color: #fff;
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
@@ -721,26 +723,23 @@ ul {
   padding: 17px 53px 18px 58px;
   background: linear-gradient(180deg, #fe5626 0%, #f23f0e 100%), linear-gradient(0deg, #59aaf1, #59aaf1);
   box-shadow: 0px 4px 8px 0px rgba(205, 169, 41, 0.26);
+  color: #fff;
   border-color: transparent;
   border-radius: 59px;
   cursor: pointer;
 }
-.contacts__button input:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  bottom: auto;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
+.contacts__button-icon {
   background-image: url("../img/icons/arrow.png");
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-repeat: no-repeat;
   width: 32px;
   height: 9px;
 }
 .contacts__img {
   position: relative;
-  bottom: -38px;
+  bottom: -68px;
 }
 
 @media screen and (max-width: 768px) {
